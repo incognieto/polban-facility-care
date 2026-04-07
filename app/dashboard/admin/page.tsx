@@ -41,8 +41,8 @@ export default async function AdminPage({
         </form>
         <ReportTable
           reports={data.reports}
-          title=\"Admin Queue\"
-          description=\"All recent reports with access to details and status management.\"
+          title="Admin Queue"
+          description="All recent reports with access to details and status management."
         />
       </main>
     );

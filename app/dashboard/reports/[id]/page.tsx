@@ -97,7 +97,7 @@ export default async function ReportDetailPage({
                       </div>
                     ))}
                     {report.comments.length === 0 ? (
-                      <p className=\"text-sm text-muted-foreground\">No comments yet.</p>
+                      <p className="text-sm text-muted-foreground">No comments yet.</p>
                     ) : null}
                   </div>
                 </CardContent>

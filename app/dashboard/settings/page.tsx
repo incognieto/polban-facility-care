@@ -12,7 +12,7 @@ export default async function SettingsPage() {
       {/* Header */}
       <div className="mb-6 sm:mb-8 space-y-3 sm:space-y-4">
         <div className="flex items-center gap-2 sm:gap-3">
-          <Button asChild variant="ghost" size="icon" className="h-9 w-9 sm:h-10 sm:w-10 flex-shrink-0">
+          <Button asChild variant="ghost" className="h-9 w-9 sm:h-10 sm:w-10 flex-shrink-0 p-0">
             <Link href="/dashboard">
               <ArrowLeft className="h-4 sm:h-5 w-4 sm:w-5" />
             </Link>
