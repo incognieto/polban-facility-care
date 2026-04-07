@@ -1,0 +1,220 @@
+
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========== LIGHT MODE ========== */
+/* Default Theme (Biru Hijau) - Light */
+:root,
+[data-theme="default"][data-mode="light"],
+[data-theme="default"]:not([data-mode]) {
+  --background: 170 56% 98%;
+  --foreground: 222 47% 11%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 47% 11%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222 47% 11%;
+  --primary: 173 80% 26%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 191 85% 92%;
+  --secondary-foreground: 222 47% 11%;
+  --muted: 180 20% 93%;
+  --muted-foreground: 215 16% 35%;
+  --accent: 38 92% 50%;
+  --accent-foreground: 222 47% 11%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 172 27% 82%;
+  --input: 172 27% 82%;
+  --ring: 173 80% 26%;
+  --radius: 1rem;
+}
+
+/* Orange & Dark Blue Theme - Light */
+[data-theme="orange-darkblue"][data-mode="light"],
+[data-theme="orange-darkblue"]:not([data-mode]) {
+  --background: 39 100% 97%;
+  --foreground: 217 33% 17%;
+  --card: 0 0% 100%;
+  --card-foreground: 217 33% 17%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 217 33% 17%;
+  --primary: 209 100% 30%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 39 100% 88%;
+  --secondary-foreground: 217 33% 17%;
+  --muted: 217 11% 91%;
+  --muted-foreground: 217 12% 43%;
+  --accent: 39 97% 53%;
+  --accent-foreground: 217 33% 17%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 39 100% 92%;
+  --input: 39 100% 92%;
+  --ring: 209 100% 30%;
+  --radius: 1rem;
+}
+
+/* Black & White Theme - Light */
+[data-theme="blackwhite"][data-mode="light"],
+[data-theme="blackwhite"]:not([data-mode]) {
+  --background: 0 0% 98%;
+  --foreground: 0 0% 15%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 15%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 15%;
+  --primary: 0 0% 20%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 0 0% 90%;
+  --secondary-foreground: 0 0% 15%;
+  --muted: 0 0% 85%;
+  --muted-foreground: 0 0% 40%;
+  --accent: 0 0% 0%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 85%;
+  --input: 0 0% 85%;
+  --ring: 0 0% 20%;
+  --radius: 1rem;
+}
+
+/* ========== DARK MODE ========== */
+/* Default Theme (Biru Hijau) - Dark */
+[data-theme="default"][data-mode="dark"] {
+  --background: 222 47% 11%;
+  --foreground: 170 56% 98%;
+  --card: 222 47% 16%;
+  --card-foreground: 170 56% 98%;
+  --popover: 222 47% 16%;
+  --popover-foreground: 170 56% 98%;
+  --primary: 173 80% 40%;
+  --primary-foreground: 222 47% 11%;
+  --secondary: 191 85% 25%;
+  --secondary-foreground: 170 56% 98%;
+  --muted: 222 47% 25%;
+  --muted-foreground: 170 56% 80%;
+  --accent: 38 92% 65%;
+  --accent-foreground: 222 47% 11%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 222 47% 25%;
+  --input: 222 47% 20%;
+  --ring: 173 80% 40%;
+  --radius: 1rem;
+}
+
+/* Orange & Dark Blue Theme - Dark */
+[data-theme="orange-darkblue"][data-mode="dark"] {
+  --background: 217 33% 17%;
+  --foreground: 39 100% 97%;
+  --card: 217 33% 25%;
+  --card-foreground: 39 100% 97%;
+  --popover: 217 33% 25%;
+  --popover-foreground: 39 100% 97%;
+  --primary: 209 100% 50%;
+  --primary-foreground: 217 33% 17%;
+  --secondary: 39 100% 35%;
+  --secondary-foreground: 39 100% 97%;
+  --muted: 217 33% 35%;
+  --muted-foreground: 39 100% 80%;
+  --accent: 39 97% 68%;
+  --accent-foreground: 217 33% 17%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 217 33% 35%;
+  --input: 217 33% 30%;
+  --ring: 209 100% 50%;
+  --radius: 1rem;
+}
+
+/* Black & White Theme - Dark */
+[data-theme="blackwhite"][data-mode="dark"] {
+  --background: 0 0% 15%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 22%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 22%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 0% 80%;
+  --primary-foreground: 0 0% 15%;
+  --secondary: 0 0% 30%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 0 0% 35%;
+  --muted-foreground: 0 0% 70%;
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 15%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 35%;
+  --input: 0 0% 30%;
+  --ring: 0 0% 80%;
+  --radius: 1rem;
+}
+
+html {
+  font-family: "DMSans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  color: hsl(var(--foreground));
+  font-family: "DMSans", sans-serif;
+}
+
+/* Default theme background gradient - Light */
+[data-theme="default"][data-mode="light"] body,
+[data-theme="default"]:not([data-mode]) body,
+:root body {
+  background:
+    radial-gradient(circle at top left, rgba(13, 148, 136, 0.18), transparent 30%),
+    linear-gradient(180deg, #f8fffe 0%, #eefdf9 100%);
+}
+
+/* Default theme background gradient - Dark */
+[data-theme="default"][data-mode="dark"] body {
+  background:
+    radial-gradient(circle at top left, rgba(115, 198, 190, 0.1), transparent 30%),
+    linear-gradient(180deg, #1a3a36 0%, #0f2825 100%);
+}
+
+/* Orange & Dark Blue theme background - Light */
+[data-theme="orange-darkblue"][data-mode="light"] body,
+[data-theme="orange-darkblue"]:not([data-mode]) body {
+  background:
+    radial-gradient(circle at top left, rgba(34, 139, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, #fffbf7 0%, #fef5f0 100%);
+}
+
+/* Orange & Dark Blue theme background - Dark */
+[data-theme="orange-darkblue"][data-mode="dark"] body {
+  background:
+    radial-gradient(circle at top left, rgba(34, 139, 255, 0.15), transparent 30%),
+    linear-gradient(180deg, #1a2838 0%, #0f1a2e 100%);
+}
+
+/* Black & White theme background - Light */
+[data-theme="blackwhite"][data-mode="light"] body,
+[data-theme="blackwhite"]:not([data-mode]) body {
+  background:
+    linear-gradient(180deg, #f5f5f5 0%, #ffffff 100%);
+}
+
+/* Black & White theme background - Dark */
+[data-theme="blackwhite"][data-mode="dark"] body {
+  background:
+    linear-gradient(180deg, #2a2a2a 0%, #1a1a1a 100%);
+}
+
+* {
+  border-color: hsl(var(--border));
+}
