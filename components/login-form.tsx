@@ -2,6 +2,7 @@
 
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Mail, Lock, LogIn, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -100,6 +101,22 @@ export function LoginForm() {
               <LogIn className="h-4 w-4" />
               {isPending ? "Processing..." : "Sign In"}
             </Button>
+
+            <div className="relative my-6">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-muted"></div>
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-background px-2 text-muted-foreground">or</span>
+              </div>
+            </div>
+
+            <p className="text-center text-sm text-muted-foreground">
+              Don't have an account?{" "}
+              <Link href="/signup" className="text-primary hover:underline font-medium">
+                Sign up here
+              </Link>
+            </p>
           </form>
         </CardContent>
       </Card>
